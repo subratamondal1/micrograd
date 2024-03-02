@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "micrograd"
+version = "0.1.0"
+description = ""
+authors = ["Subrata Mondal <subratasubha2@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.4"
+matplotlib = "^3.8.3"
+pandas = "^2.2.1"
+pydantic = "^2.6.3"
+black = "^24.2.0"
+pytest = "^8.0.2"
+pytest-cov = "^4.1.0"
+pylint = "^3.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
