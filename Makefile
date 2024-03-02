@@ -20,8 +20,8 @@ deploy:
 	# deploy
 	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 561744971673.dkr.ecr.us-east-1.amazonaws.com
 	docker build -t micrograd .
-	docker tag micrograd:latest 561744971673.dkr.ecr.us-east-1.amazonaws.com/fastapi-wiki:latest
-	docker push 561744971673.dkr.ecr.us-east-1.amazonaws.com/fastapi-wiki:latest
+	docker tag micrograd:latest 561744971673.dkr.ecr.us-east-1.amazonaws.com/micrograd:latest
+	docker push 561744971673.dkr.ecr.us-east-1.amazonaws.com/micrograd:latest
 install-local:
 	# use this to work with poetry in your local environment, github actions were throwing error
 	poetry install --no-root
